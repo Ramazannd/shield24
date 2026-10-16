@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в админ-панель</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body class="admin-page admin-login-page">
+    <main class="login-shell">
+        <section class="login-panel">
+            <div class="login-copy">
+                <p class="eyebrow">Управление заявками</p>
+                <h1>Админка ЧОП с чистым и премиальным интерфейсом</h1>
+                <p class="login-lead">Контролируйте входящие обращения, меняйте статусы и держите в фокусе новые заявки без лишнего визуального шума.</p>
+
+                <ul class="login-points">
+                    <li>Быстрый доступ к новым обращениям</li>
+                    <li>Статусы и действия в одном экране</li>
+                    <li>Единый стиль с основным сайтом</li>
+                </ul>
+            </div>
+
+            <div class="login-card">
+                <div class="card-head">
+                    <p class="eyebrow">Авторизация</p>
+                    <h2>Вход в панель управления</h2>
+                </div>
+
+                <form id="loginForm" class="admin-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="admin@company.ru" required autofocus>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Войти</button>
+                </form>
+
+                <div id="loginMessage" class="message"></div>
+                <p class="login-hint">Тестовый доступ: `admin@chop.ru / admin123`</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>

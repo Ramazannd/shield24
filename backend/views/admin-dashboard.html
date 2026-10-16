@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления заявками</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body class="admin-page admin-dashboard-page">
+    <header class="admin-topbar">
+        <div class="admin-container topbar-row">
+            <div class="topbar-copy">
+                <p class="eyebrow">Панель управления</p>
+                <h1>Заявки и статусы</h1>
+            </div>
+            <div class="topbar-actions">
+                <a href="/" class="btn btn-secondary">На сайт</a>
+                <button id="logoutBtn" class="btn btn-primary">Выйти</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-container dashboard-layout">
+        <section class="dashboard-intro">
+            <div class="intro-copy">
+                <p class="eyebrow">Рабочая область</p>
+                <h2>Контролируйте обращения без перегруженного интерфейса</h2>
+                <p>Следите за новыми лидами, быстро переводите заявки по этапам и держите команду в курсе текущей загрузки.</p>
+            </div>
+
+            <div id="statsGrid" class="stats-grid">
+                <article class="stat-card">
+                    <span>Всего заявок</span>
+                    <strong id="statTotal">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span>Новые</span>
+                    <strong id="statNew">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span>В работе</span>
+                    <strong id="statInProgress">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span>Завершенные</span>
+                    <strong id="statCompleted">0</strong>
+                </article>
+            </div>
+        </section>
+
+        <section class="toolbar">
+            <div class="toolbar-copy">
+                <h3>Фильтр заявок</h3>
+                <p>Оставьте только нужный статус, чтобы быстрее разбирать очередь.</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-status="all">Все</button>
+                <button class="filter-btn" data-status="new">Новые</button>
+                <button class="filter-btn" data-status="in_progress">В работе</button>
+                <button class="filter-btn" data-status="completed">Завершенные</button>
+                <button class="filter-btn" data-status="rejected">Отклоненные</button>
+            </div>
+        </section>
+
+        <section class="applications-section">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Живая лента</p>
+                    <h3>Последние обращения</h3>
+                </div>
+                <p id="applicationsMeta" class="applications-meta">Загрузка заявок...</p>
+            </div>
+
+            <div id="applicationsContainer" class="applications-grid">
+                <p class="empty-state loading-state">Загрузка заявок...</p>
+            </div>
+        </section>
+
+        <section class="blacklist-section">
+            <div class="section-header">
+                <div>
+                    <p class="eyebrow">Ограничения</p>
+                    <h3>Черный список компаний</h3>
+                </div>
+                <p id="blacklistMeta" class="applications-meta">Загрузка списка...</p>
+            </div>
+
+            <div class="blacklist-layout">
+                <form id="blacklistForm" class="blacklist-form">
+                    <div class="form-group">
+                        <label for="blacklistCompanyName">Компания</label>
+                        <input type="text" id="blacklistCompanyName" name="companyName" placeholder="Например, ООО Альфа" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="blacklistReason">Причина</label>
+                        <textarea id="blacklistReason" name="reason" rows="4" placeholder="Почему компания добавлена в черный список"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Добавить компанию</button>
+                    <div id="blacklistMessage" class="message"></div>
+                </form>
+
+                <div id="blacklistContainer" class="blacklist-list">
+                    <p class="empty-state">Загрузка списка...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const token = localStorage.getItem('adminToken');
+        if (!token) {
+            window.location.href = '/admin.html';
+        }
+    </script>
+    <script src="/js/admin.js"></script>
+</body>
+</html>

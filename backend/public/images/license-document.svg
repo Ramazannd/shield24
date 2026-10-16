@@ -1,0 +1,20 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" rx="32" fill="#F6F1DF"/>
+  <rect x="54" y="54" width="792" height="1092" rx="24" stroke="#1B1B1B" stroke-opacity="0.12" stroke-width="2"/>
+  <rect x="118" y="112" width="664" height="104" rx="18" fill="#101010"/>
+  <text x="450" y="174" text-anchor="middle" fill="#FFD600" font-family="Arial, sans-serif" font-size="40" font-weight="700">Лицензия ЧОП "Щит"</text>
+  <text x="118" y="302" fill="#101010" font-family="Arial, sans-serif" font-size="26" font-weight="700">Номер лицензии</text>
+  <text x="118" y="344" fill="#3B3B3B" font-family="Arial, sans-serif" font-size="24">№ 123456</text>
+  <text x="118" y="430" fill="#101010" font-family="Arial, sans-serif" font-size="26" font-weight="700">Дата выдачи</text>
+  <text x="118" y="472" fill="#3B3B3B" font-family="Arial, sans-serif" font-size="24">15 марта 2023 года</text>
+  <text x="118" y="558" fill="#101010" font-family="Arial, sans-serif" font-size="26" font-weight="700">Выдавший орган</text>
+  <text x="118" y="600" fill="#3B3B3B" font-family="Arial, sans-serif" font-size="24">Федеральная служба войск национальной гвардии РФ</text>
+  <text x="118" y="716" fill="#101010" font-family="Arial, sans-serif" font-size="28" font-weight="700">Настоящий документ подтверждает право компании</text>
+  <text x="118" y="758" fill="#101010" font-family="Arial, sans-serif" font-size="28" font-weight="700">осуществлять частную охранную деятельность.</text>
+  <rect x="118" y="846" width="268" height="96" rx="18" fill="#FFD600"/>
+  <text x="252" y="904" text-anchor="middle" fill="#101010" font-family="Arial, sans-serif" font-size="30" font-weight="700">Росгвардия</text>
+  <circle cx="690" cy="894" r="92" fill="#101010" fill-opacity="0.06"/>
+  <path d="M689.5 835L734.5 853V892C734.5 949.882 689.5 974 689.5 974C689.5 974 644.5 949.882 644.5 892V853L689.5 835Z" fill="#FFD600"/>
+  <path d="M669 899L684 914L714 873" stroke="#101010" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="118" y="1068" fill="#7A7A7A" font-family="Arial, sans-serif" font-size="22">Документ представлен в демонстрационных целях для сайта.</text>
+</svg>
